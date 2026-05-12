@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio About</title>
     <link rel="stylesheet" href="../Styles/styles.css" />
+    <script src="../js/darkmode.js" defer></script>
   </head>
   <body>
     <header>
@@ -49,13 +50,14 @@
       </section>
       <section class="upcoming-gamebar">
         <h2>Game ideas i would like to make</h2>
-        <article class="game-container">
+        <div class="scroller-track">
+          <article class="game-container"> 
           <a href="#">
             <img
               src="../Assets/Images/village-sim.jpg"
               alt="A picture displaying a screenshot from my most recent project"
             />
-            <div class="card-content">
+             <div class="card-content">
               <h2>AI Soccer</h2>
               <p>
                 This game will apply machine learning concepts to pit 2 AI
@@ -66,7 +68,9 @@
           </a>
         </article>
       </section>
-      <article class="card-media">
+        </div>
+          <div class="card-container">
+            <article class="card-media">
         <a href="media.html">
           <img
             src="../Assets/Images/mediaPagePic.jpg"
@@ -89,6 +93,8 @@
           </div>
         </a>
       </article>
+          </div> 
+      
     </main>
     <footer>
       <nav class="back-to-home">

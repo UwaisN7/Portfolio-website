@@ -310,3 +310,71 @@ h3 {
 .dropdown-content.show {
   display: block;
 }
+
+/*Light mode stuff*/
+
+body.light-mode {
+  background-color: #ededed;
+  color: #1f1e1e;
+}
+
+body {
+  transition:
+    background-color 0.3s ease,
+    color 0.3 ease;
+}
+.card-about,
+.card-game,
+.card-media,
+.card-miscl,
+.existing-gamebar,
+.upcoming-gamebar,
+.skills-list li,
+.cv-download-btn {
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+body.light-mode header {
+  background-color: #e3dddd;
+}
+
+body.light-mode .card-about,
+body.light-mode .card-game,
+body.light-mode .card-media,
+body.light-mode .card-miscl,
+body.light-mode .card-content,
+body.light-mode .existing-gamebar,
+body.light-mode .upcoming-gamebar,
+body.light-mode .existing-website,
+body.light-mode .upcoming-websites,
+body.light-mode .blender-projects,
+body.light-mode .uni-projects {
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.light-mode.card-content {
+  background-color: #ffffff;
+}
+
+body.light-mode.skills-list li {
+  background-color: #829cd0;
+  color: #1f1e1e;
+}
+
+body.light-mode.cv-download-btn {
+  background-color: #2ecc71;
+  color: #1f1e1e;
+}
+
+body.lightmode.dropdown-content {
+  background-color: #ffffff;
+}
+body.light-mode .dropdown-content a {
+  color: #1f1e1e;
+}
+
+body.light-mode .dropdown-content a:hover {
+  background-color: #829cd0;
+}
