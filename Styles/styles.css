@@ -287,7 +287,7 @@ h3 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #2a2a2a;
+  background-color: #1b1919;
   min-width: 200px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -297,7 +297,7 @@ h3 {
 
 .dropdown-content a {
   color: #f2f2f2;
-  padding: 12px 16px;
+  padding: 25px 25px;
   text-decoration: none;
   display: block;
   transition: background-color 0.2s;
@@ -311,10 +311,43 @@ h3 {
   display: block;
 }
 
+#submit-email-btn {
+  background-color: #fff8f8;
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+#submit-email-btn a:hover {
+  background-color: #20368f;
+}
+body.light-mode .dropdown-content {
+  background-color: #e3dddd;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .dropdown-content a {
+  color: #1f1e1e;
+}
+
+body.light-mode .dropdown-content a:hover {
+  background-color: #829cd0;
+  color: white;
+}
+
+body.light-mode .dropdown-content input {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+  color: #1f1e1e;
+}
+
+body.light-mode .dropdown-divider {
+  background-color: #ddd;
+}
+
 /*Light mode stuff*/
 
 body.light-mode {
-  background-color: #ededed;
+  background-color: #e3dddd;
   color: #1f1e1e;
 }
 
