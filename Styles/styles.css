@@ -411,3 +411,17 @@ body.light-mode .dropdown-content a {
 body.light-mode .dropdown-content a:hover {
   background-color: #829cd0;
 }
+
+/* Menu hide stuff*/
+
+.nav-menu {
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.nav-menu.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
