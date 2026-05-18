@@ -19,7 +19,7 @@ function removeContact() {
   }
 }
 
-const submitEmailBtn = document.getElementById("submitEmailBtn");
+const submitEmailBtn = document.getElementById("submit-email-btn");
 const emailInput = document.getElementById("dropdownEmail");
 
 submitEmailBtn.addEventListener("click", submitEmail);

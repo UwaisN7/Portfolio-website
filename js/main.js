@@ -8,13 +8,12 @@ const completedGames = [
     altText: "Screenshot from Project Village",
   },
   {
-    title: "Previous Game 2",
-    description: "Description of your second completed game.",
-    image: "../Assets/Images/game2-placeholder.jpg",
+    title: "Angela's Mission",
+    description: "Shoot up a casino from a top down perspective",
+    image: "../Assets/Images/angela's-misson.jpg",
     webglLink: "#",
-    altText: "Screenshot from Game 2",
+    altText: "Screenshot from Angela's Mission",
   },
-  // Add more games here as you build them
 ];
 
 const upcomingGames = [
