@@ -87,10 +87,13 @@ h3 {
   overflow: hidden;
   margin: 20px 0;
 }
+/*reminder this is the pic stufff */
 .card-about img,
 .card-game img,
 .card-media img,
-.card-miscl img {
+.card-miscl img,
+.blender-projects img,
+.uni-projects img {
   width: 100%;
   height: 180px;
   object-fit: cover;
