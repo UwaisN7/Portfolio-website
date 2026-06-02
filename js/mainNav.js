@@ -18,39 +18,66 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   `;
 
+  //darkmode Stuff
   const darkModeBtn = document.querySelector(".darkmode-btn");
   if (localStorage.getItem("theme") === "light") {
     document.body.classList.add("light-mode");
   }
   if (darkModeBtn) {
-    darkModeBtn.addEventListener("click", function () {
+    darkModeBtn.addEventListener("click", toggleDarkMode);
+
+    function toggleDarkMode() {
       document.body.classList.toggle("light-mode");
       localStorage.setItem(
         "theme",
         document.body.classList.contains("light-mode") ? "light" : "dark",
       );
-    });
+    }
   }
 
+  //CV stufff
+  const cvBtn = document.querySelector(".cv-btn");
+
+  cvBtn.addEventListener("click", downloadCV);
+
+  function downloadCV() {
+    const link = document.createElement("a");
+    link.href = "Assets/Files/Uwais-Noor-Moosa-CV.pdf";
+    link.href = "../Assets/Files/Uwais-Noor-Moosa-CV.pdf";
+    link.download = "Uwais-Noor-Moosa-CV.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  //Dropdown stufff
   const contactBtn = document.querySelector(".contact-btn");
   const dropdown = document.querySelector(".dropdown-content");
   if (contactBtn && dropdown) {
-    contactBtn.addEventListener("click", function (e) {
-      e.stopPropagation();
+    contactBtn.addEventListener("click", createContactDropdown);
+    function createContactDropdown(event) {
+      event.stopPropagation();
       dropdown.classList.toggle("show");
-    });
+    }
 
-    document.addEventListener("click", function (e) {
-      if (!contactBtn.contains(e.target) && !dropdown.contains(e.target)) {
+    document.addEventListener("click", removeContactDropDown);
+    function removeContactDropDown(event) {
+      if (
+        !contactBtn.contains(event.target) &&
+        !dropdown.contains(event.target)
+      ) {
         dropdown.classList.remove("show");
       }
-    });
+    }
   }
 
+  //emailStuff
   const submitBtn = document.getElementById("submitEmailBtn");
   const emailInput = document.getElementById("dropdownEmail");
   if (submitBtn && emailInput) {
-    submitBtn.addEventListener("click", function () {
+    submitBtn.addEventListener("click", sendEmail);
+    function sendEmail() {
       const email = emailInput.value.trim();
       if (email && email.includes("@")) {
         alert(`Thanks! I'll notify ${email}`);
@@ -59,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         alert("Please enter a valid email address");
       }
-    });
+    }
   }
 
   const menuBtn = document.querySelector(".dropdown-btn");
@@ -68,10 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.classList.add("hidden");
     menuBtn.innerHTML = "☰ Menu";
 
-    menuBtn.addEventListener("click", function (e) {
-      e.stopPropagation();
+    menuBtn.addEventListener("click", hideMenu);
+    function hideMenu(event) {
+      event.stopPropagation();
       nav.classList.toggle("hidden");
       menuBtn.innerHTML = nav.classList.contains("hidden") ? "☰ Menu" : "✕";
-    });
+    }
   }
 });
