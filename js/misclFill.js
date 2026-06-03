@@ -18,7 +18,13 @@ const universityProjects = [
     title: "Environmental storytelling",
     description:
       "The assignement was to create an environment and describe it by having an exisitng in world story that made sense within the environment",
-    pageLink: "",
+    pdf: "../Assets/Files/characterDevelopment.pdf",
+  },
+  {
+    title: "Capture the golden bead",
+    description:
+      "My first group assignment we were tasked to make a board game and we built a game in whic players had to capture a golden bead in the middle of the board in a 1v1",
+    pdf: "../Assets/Files/goldenBeadRuleset.pdf",
   },
 ];
 
@@ -70,6 +76,7 @@ function renderUniversityProjects(uniArray, containerSelection) {
         <div class="card-content">
           <h3>${universityProject.title}</h3>
           <p>${universityProject.description}</p>
+       <a href="${universityProject.pdf}" download>Get the PDF file here→</a>
         </div>
       </article>
     `;

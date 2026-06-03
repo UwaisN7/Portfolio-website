@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function sendEmail() {
       const email = emailInput.value.trim();
       if (email && email.includes("@")) {
-        alert(`Thanks! I'll notify ${email}`);
+        alert(`Thanks! I'll notify uwaisn73@gmail.com`);
         emailInput.value = "";
         dropdown.classList.remove("show");
       } else {

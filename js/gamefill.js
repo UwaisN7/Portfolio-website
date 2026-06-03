@@ -3,7 +3,7 @@ const completedGames = [
     title: "Project Village",
     description:
       "This game is about managing AI to maintain building integrity by assigning them to buildings for repair.",
-    image: "../Assets/Images/gamePagePic.jpg",
+    image: "../Assets/Images/villagePic.jpg",
     webglLink: "../Assets/WebGl builds/Village Management sim/village.html",
     altText: "Screenshot from Project Village game",
   },
@@ -11,7 +11,7 @@ const completedGames = [
     title: "Simple Parkour",
     description:
       "A basic speedrunner where the player has to beat the course in under 2 minutes, has basic movement and a slide mechanic (WASD to move,Left Crtl to slide and Space to Jump, Jump and Space at the same time will result in a lower jump height)",
-    image: "#",
+    image: "../Assets/Images/parkourGame.jpg",
     webglLink: "../Assets/WebGl builds/ParkourGame/parkour.html",
     altText: "Screenshot from a parkour game",
   },
@@ -19,7 +19,7 @@ const completedGames = [
     title: "Fish tank",
     description: "A personal project i built for fum ",
     image: "../Assets/Images/fishTank.jpg",
-    webglLink: "#",
+    webglLink: "../Assets/Images/fishTank.jpg",
     altText: "Screenshot from Fish tank game",
   },
   {

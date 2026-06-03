@@ -43,7 +43,8 @@ nav {
 .dropdown-btn,
 .cv-btn,
 .contact-btn,
-.darkmode-btn {
+.darkmode-btn,
+#submitEmailBtn {
   background-color: #20368f;
   color: white;
   border: none;
@@ -56,7 +57,8 @@ nav {
 .dropdown-btn:hover,
 .cv-btn:hover,
 .contact-btn:hover,
-.darkmode-btn:hover {
+.darkmode-btn:hover,
+#submitEmailBtn:hover {
   background-color: #4a90e2;
 }
 
@@ -385,7 +387,11 @@ body.light-mode {
   background-color: #e3dddd;
   color: #1f1e1e;
 }
+body.light-mode header {
+  background-color: #605a5a;
 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 body {
   transition:
     background-color 0.3s ease,
