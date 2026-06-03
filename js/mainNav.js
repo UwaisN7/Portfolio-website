@@ -20,18 +20,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //darkmode Stuff
   const darkModeBtn = document.querySelector(".darkmode-btn");
-  if (localStorage.getItem("theme") === "light") {
-    document.body.classList.add("light-mode");
-  }
+
   if (darkModeBtn) {
+    if (localStorage.getItem("theme") === "light") {
+      document.body.classList.add("light-mode");
+      darkModeBtn.textContent = "Dark Mode";
+    } else {
+      darkModeBtn.textContent = "Light Mode";
+    }
+
     darkModeBtn.addEventListener("click", toggleDarkMode);
 
     function toggleDarkMode() {
       document.body.classList.toggle("light-mode");
-      localStorage.setItem(
-        "theme",
-        document.body.classList.contains("light-mode") ? "light" : "dark",
-      );
+
+      if (document.body.classList.contains("light-mode")) {
+        darkModeBtn.textContent = "Dark Mode";
+        localStorage.setItem("theme", "light");
+      } else {
+        darkModeBtn.textContent = "Light Mode";
+        localStorage.setItem("theme", "dark");
+      }
     }
   }
 
