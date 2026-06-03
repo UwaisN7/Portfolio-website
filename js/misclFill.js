@@ -15,8 +15,9 @@ const blenderProjects = [
 
 const universityProjects = [
   {
-    title: "Some PDF download",
-    description: "blablava=ah d",
+    title: "Environmental storytelling",
+    description:
+      "The assignement was to create an environment and describe it by having an exisitng in world story that made sense within the environment",
     pageLink: "",
   },
 ];
