@@ -1,10 +1,31 @@
 const existingWebsites = [
   {
-    title: "Website 1",
-    description: "Hellow world ",
-    image: "#",
-    pageLink: "../Assets/WebGl builds/Village Management sim/village.html",
-    altText: "Screenshot from Project Village game",
+    title: "Colour Picker",
+    description:
+      "One of the tickets we were tasked to make was to use Javascript to code a change in the hex code and change the background randomly according to the hex code displayed. ",
+    image: "../Assets/Images/colorPicker.jpg",
+    altText: "Screenshot taken from a colour picker activity",
+  },
+  {
+    title: "Server Status based on a given object array",
+    description:
+      "The task here was to build a page using Javascript to display infomation within a given object array, we needed to update the DOM using JS as well as creating a function that would dynamically change based on the object array instead of hardcoding with HTML. ",
+    image: "../Assets/Images/miniServerUpdater.jpg",
+    altText: "Screenshot from a server status activity",
+  },
+  {
+    title: "Simple Counter",
+    description:
+      "In this Activity we were tasked to build a simple counter that changed based on whichever button was clicked, using Javascript ",
+    image: "../Assets/Images/counterPic.jpg",
+    altText: "Screenshot from counter activity",
+  },
+  {
+    title: "Review displayer for users",
+    description:
+      "In this activity we were tasked to build a dynamic DOM updater using Javascript to showcase different reviews within an object array with a button that would randomise the reviews shown or go in order",
+    image: "../Assets/Images/reviewSite.jpg",
+    altText: "Screenshot from review activity",
   },
 ];
 
@@ -12,7 +33,12 @@ const upcomingWebsites = [
   {
     title: "Cookie Clicker",
     description:
-      "The first website i would like to build by myself is a simple cookie clicker but personalised to my preferences ",
+      "The first website i would like to build by myself is a simple cookie clicker but personalised and adding twists to the established formula",
+  },
+  {
+    title: "Personal Music player",
+    description:
+      "It would be easy to build a front-end music player to store all of my favourite music in one place and be able to play them without the need to pay for a subscription service",
   },
 ];
 
